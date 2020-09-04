@@ -3,4 +3,5 @@ app.yaml
 .git
 .gitignore
 node_modules/
+.env
 #!include:.gitignore
