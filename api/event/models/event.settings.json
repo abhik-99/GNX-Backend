@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "Event"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SpeakerName1": {
+      "type": "string"
+    },
+    "SpeakerName2": {
+      "type": "string"
+    },
+    "SpeakerName3": {
+      "type": "string"
+    },
+    "SpeakerName4": {
+      "type": "text"
+    },
+    "SpeakerBio1": {
+      "type": "text"
+    },
+    "SpeakerBio2": {
+      "type": "text"
+    },
+    "SpeakerBio3": {
+      "type": "text"
+    },
+    "SpeakerBio4": {
+      "type": "text"
+    },
+    "Pic": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "DateTime": {
+      "type": "datetime"
+    },
+    "RegistrationLink": {
+      "type": "string"
+    },
+    "About": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentors",
+  "info": {
+    "name": "Mentor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "About": {
+      "type": "text"
+    },
+    "ProfilePic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Designation": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_members",
+  "info": {
+    "name": "Team"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "TeamName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "ProfilePic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "About": {
+      "type": "text"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "GitHub": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Department": {
+      "type": "string"
+    },
+    "StudentId": {
+      "type": "string"
+    },
+    "YouTubeIntro": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    }
+  }
+}

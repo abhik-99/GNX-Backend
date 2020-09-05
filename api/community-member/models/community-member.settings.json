@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_members",
+  "info": {
+    "name": "Community Member"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "About": {
+      "type": "text"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "GitHub": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "YouTubeIntro": {
+      "type": "string"
+    },
+    "Profile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Resume": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Department": {
+      "type": "string"
+    },
+    "StudentId": {
+      "type": "string"
+    }
+  }
+}
