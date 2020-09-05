@@ -9,5 +9,5 @@
  *
  * See more details here: https://strapi.io/documentation/v3.x/concepts/configurations.html#bootstrap
  */
-
+console.log("PROCESS VARIABLES", process.env)
 module.exports = () => {};
