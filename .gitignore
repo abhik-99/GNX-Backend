@@ -113,4 +113,5 @@ exports
 .cache
 build
 app.yaml
+package-lock.json
 # extensions/upload/config/settings.json
