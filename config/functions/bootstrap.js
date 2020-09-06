@@ -15,6 +15,6 @@ console.log(process.env.DATABASE_PORT)
 console.log(process.env.DATABASE_USERNAME)
 console.log(process.env.DATABASE_PASSWORD)
 console.log(process.env.DATABASE_HOST)
-console.log(process.env.ADMIT_JWT_SECRET)
+console.log(process.env.ADMIN_JWT_SECRET)
 console.log(process.env.JWT_SECRET)
 module.exports = () => {};
