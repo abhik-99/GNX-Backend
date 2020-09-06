@@ -113,4 +113,4 @@ exports
 .cache
 build
 app.yaml
-extensions/upload/config/settings.json
+# extensions/upload/config/settings.json
