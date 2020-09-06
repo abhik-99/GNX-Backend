@@ -114,4 +114,4 @@ exports
 build
 app.yaml
 package-lock.json
-# extensions/upload/config/settings.json
+extensions/upload/config/settings.json
