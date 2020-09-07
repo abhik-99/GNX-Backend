@@ -107,6 +107,11 @@ coverage
 # Strapi
 ############################
 
+###############################
+# For uploading to Google 
+# Bucket, remove settings.json
+# From .gitignore
+###############################
 .env
 license.txt
 exports
